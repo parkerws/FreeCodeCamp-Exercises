@@ -1,0 +1,30 @@
+
+<!doctype html>
+<div id="main">
+  <h1 id="title">General James N. Mattis</h1>
+  <div>A beacon of hope for the DoD</div>
+  <div id="img-div">
+    <img id="image"
+  src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/11/21/08/general-james-mattis.jpg?w968" alt "Mattis speaking in a forum">
+    <div id="img-caption">
+         General Mattis speaks to reporters about his potential appointment as Secretary of Defense
+    </div>
+  </div>
+  <div id="tribute-info">
+      <ul>
+        <h3 id ="headline">Here's a timeline of General Mattis' life:</h3>
+        <li><strong>1950</strong> - Born in Pullman, Washington</li>
+        <li><strong>1969</strong> - Enlists in the Marine Corps Reserve</li>
+        <li><strong>2003</strong> - Commands 1st Marine Division during the 2003 invasion of Iraq</li>
+        <li><strong>2010</strong> - Recommended to lead U.S. Central Command</li>
+        <li><strong>2017</strong> - Confirmed as U.S. Secretary of Defense</li>
+        <li><strong>2019</strong> - Resigns as Secretary of Defense</li> 
+     <blockquote>
+       <p>‘I come in peace. I didn’t bring artillery. But I’m pleading with you, with tears in my eyes: If you fuck with me, I’ll kill you all.’</p>
+        </blockquote>
+           <h3>Read more into Mad Dog's achievements on his
+     <a id="tribute-link"
+        href="https://en.wikipedia.org/wiki/Jim_Mattis" target="_blank">Wikipedia Entry</a>  
+        </h3>
+  </div>
+</div>
