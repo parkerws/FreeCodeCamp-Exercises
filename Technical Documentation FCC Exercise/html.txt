@@ -1,0 +1,272 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<DOCTYPE HTML>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+</style> 
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div id="page-wrapper">
+ 
+<nav id="navbar">
+   <header id="header">Technical Documentation for C#</header>
+  <ul>
+    <a class="nav-link" href="#introduction"><li>Introduction</li></a>
+    <a class="nav-link" href="#what-you-know"><li>What you should already know</li></a>
+    <a class="nav-link" href="#c#"><li>C#</li></a></li>
+    <a class="nav-link" href="#hello_world"><li>Hello World</li></a></li>
+    <a class="nav-link" href="#variables"><li>Variables</li></a></li>
+    <a class="nav-link" href="#declaring_variables"><li>Declaring Variables</li></a>
+    <a class="nav-link" href="#variable_scope"><li>Variable Scope</li></a>
+    <a class="nav-link" href="#global_variables"><li>Global Variables</li></a>
+    <a class="nav-link" href="#constants"><li>Constants</li></a>
+    <a class="nav-link" href="#data_types"><li>Data Types</li></a>
+    <a class="nav-link" href="#if...else_statements"><li>If...Else Statements</li></a>
+    <a class="nav-link" href="#while_statement"><li>While Statement</li></a>
+    <a class="nav-link" href="#function-declarations"><li>Function Declarations</li></a>
+    <a class="nav-link" href="#reference"><li>Reference</li></a>
+  </ul>
+  </nav>
+ 
+  <main id="main-doc"
+  <div id="main">
+    <section class="main-section" id="introduction">
+      <header>Introduction</header>
+      <p>C# is a Microsoft-developed, object-oriented programming language. It packs many features accompanied by Visual Studio to allow for many different additions and capabilities. </p>
+      
+      <p>C# contains a standard library of objects, as well as many that can be added to its library. C# can be used for:</p>
+      <ul>
+        
+        <li>Developing web applications with ASP.NET</li>
+        <li>Game development</li>
+        <li>and much more!</li>
+        
+      </ul>
+      
+      
+    </section>
+    <section id="what_you_know">
+      <header>What You Should Already Know</header>
+      <p>This guide assumes you have the following basic background</p>
+      <ul>
+        <li>A basic understanding of computers</li>
+        <li>A basic understanding of mathematical concepts</li>
+        <li>The ability to think abstractly</li>
+    </section>
+  <section class="main-section" id="c#">
+    <header>C#</header>
+    
+    <p>During the development of the >NET Framework, the class libraries were originally written using a managed code compiler system called <em>Simple Managed C (SMC)</em> In January 1999, Anders Hejlsberg formed a team to build a new language at the time called Cool, which stood for "C-like Object Oriented Language". By the time the .NET priject was publicly announced at the July 2000 Professional Developers Conference, the language had been renamed C# and the class libraries and ASP.NET runtime has been ported to C#</p>
+    
+    <p>The name is an iteration of C++, which in programming indicates to increment a variable after being evaluated. the # sign appears to be four "+" signs, suggesting that C# is an iteration of C++.</p>
+    
+    <p>There have been several versions of C# since its invention, and is currently on C# Version 7.3.</p>
+    
+      </section>
+      
+  <section class="main-section" id="hello_world">
+    <header>Hello World</header>
+    
+    <p>The best development environment for C# is Visual Studio, which is now on version 2019. To accomplish the first task, it is easiest to open a new console application in Visual Studio, which will prepopulate most of the references the program will use automaticall. Most people learning a new programming language first determine the proper way to print the words "hello world" to screen. In C#, this is accomplished by the following:</p>
+    
+    <code>Console.WriteLine("Hello World");<br>
+    Console.ReadLine();</code>
+    
+      </section>
+      
+  <section class="main-section" id="variables">
+    
+    <header>Variables</header>
+    
+    <p>Variables are named items within a program that can be assigned and hold values. They can be manipulated and changed during runtime depending on the variable and what its purpose is </p>
+    
+    <p>Variables can hold several different types of data. Some may only hold small whole numerical values, so <code>byte</code> may be used. Some variables may have a combination of letters and numbers as their value, so <code>string</code> would be an appropriate variable type. There are many other data types.</p>
+    
+      </section>
+      
+    <section class="main-section" id="declaring_variables">
+      
+      <header>Declaring Variables</header>
+      
+      <p>Variables are declared with their data type and then their definition. A value type may or may not be assigned at the time of creation. </p>
+      
+      <p>A string would be assigned like this: <br><br><code>string x</code></p>
+      
+      <p>A variable that will hold only numbers may be declared like this <br><br><code>int n = 6</code></p>
+      
+      </section>
+      
+    <section class="main-section" id="variable_scope">
+      
+      <header>Variable Scope</header>
+      
+      <p>C# is an object-oriented programming language and as such, features concepts such as encapsulation, inheritance, and more. Because of this, variable values can be represented on different levels of the program. At the class level, the variable is declared for all subsequent methods and blocks.</p>
+      
+      <p>A basic program with a variable declared at the class level will look like this: <pre><code>using System;
+      
+      class Ball {
+      
+      int a = 10
+     
+     }</pre></code></p>
+     
+     <p>Because this is in the class level, we can access it in a method. For example: 
+      <pre><code>
+      using System;
+      
+          class Ball {
+      
+          int a = 10
+          
+          public void display()
+          {
+            Console.WriteLine(a);
+            Console.ReadLine();
+          }
+      }
+      </pre></code>
+</p>
+      
+      </section>
+  
+    <section class="main-section" id="global_variables">
+      
+      <header>Global Variables</header>
+      
+      <p>Global variables are highly discouraged in C#. It is difficult to declare one, and must be used as a workaround. A dedicated class can be created to declare global variables, but it is better to reference the appropriate classes within the program to decrease the chances of errors.</p>
+      
+      
+  </section>
+  
+  
+    <section class="main-section" id="constants">
+      
+      <header>Constants</header>
+      
+      <p>Constants are values that are declared at time of compilation and cannot be changed during runtime. Constants are defined with <code>const</code> in C#. </p>
+      
+      <p>Constants are declared in a similar way to variables. For example: <pre><code>
+      
+      class Calendar
+      {
+        const int months = 12, weeks = 52, days = 365;
+      }
+      </pre></code>
+</p>
+  </section>
+
+    <section class="main-section" id="data_types">
+      
+      <header>Data Types</header>
+      
+      <p>Data types are what is used to tell the computer what kind of information a constant or variable holds. There are multiple data types, and sometimes it isn't critical to define precisely what kind of data is held; however, by limiting the type of data that can exist within a variable, it can cut down on processing.</p>
+      <p>Some of the data types are as follows:</p>
+      <ul>
+        <li>int</li>
+        <li>string</li>
+        <li>float</li>
+        <li>double</li>
+        <li>byte</li>
+        <li>and several more</li>
+      </ul>
+      
+      
+</section>
+
+    <section class="main-section" id="if...else_statements">
+      
+      <header>if...else Statements</header>
+      
+      <p>if else statements are conditional formulas that evaluate whether or not a certain set of conditions are true, and if they are not, they will attempt a different condition based on the else statement. For example:</p>
+       
+      <p>We use the if statements to perform an action if a condition is met <pre><code>
+      
+      int a = 5
+      int b = 10
+      
+      if (a > b) {
+        
+        a = a + b
+      
+      }
+      
+      else if (a < b) {
+      
+      b = b + b
+      
+      }
+      
+      else {
+      
+      a = b
+      
+      }
+      </pre></code>
+</p>
+     <p>As you can see above, the statement will continue to roll through the cycle until it meets one of the conditions. In this particular example, the second statement will be true, so the variable b will then become the sum of b + b, or 20. The last statement, or else statement, wiull not be used.</p>
+</section>
+
+    <section class="main-section" id="while_statement">
+      
+      <header>While Statement</header>
+      
+      <p>The While statement will execute and continue to execute its statement while it remains true. For example:</p>
+      
+      <p><pre><code>while (a = b) {
+      do stuff
+      }</code></pre></p>
+
+<p>There are also other types of statements, such as do...while statements, which will execute a specific statement first regardless of evaluation, and then continue into a while loop.</p>
+
+</section>
+
+    <section class="main-section" id="function_declarations">
+      
+      <header>Function Declarations</header>
+      
+      <p>In C#, functions aren't specifically called by that name as they are in other programming languages. In C#, functions are called methods, although they do the same thing. The only difference is that methods are nested within classes and provide functionality to classes.</p>
+      
+      <p>A method may look something like this:<pre><code>
+      Class Program
+      {
+        string name, city;
+        int age;
+        
+        public void acceptDetails()
+        {
+          Console.Write("Enter your name:");
+          name = Console.ReadLine();
+          
+          Console.Write("Enter your city:");
+          city = Console.ReadLine();
+          
+          Console.Write("Enter your age:");
+          age = Convert.ToInt32(Console.ReadLine());
+        }
+      }
+      
+      </pre></code>
+</p>
+<p>The function, or method, in this example is <code>acceptDetails()</code></p>
+</section>
+
+    <section class="main-section" id="reference">
+      
+      <header>Reference</header>
+      
+      <p>The majority of this information and much more can be found at <a href="https://docs.microsoft.com/en-us/dotnet/csharp/index" target="_blank">Microsoft Docs</a> </p>
+</section>
+</div>
+</main>
+  
+  
+  <!-- 
+
+
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
